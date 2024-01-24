@@ -22,4 +22,12 @@ $(document).ready(function() {
             }
         })
     })
+    
+    $('input[name=phone_number]').on('input', function() {
+        let input_value = $(this).val();
+    
+        if(input_value === '') {
+            $('.check_number_status').empty();
+        }
+    })
 })
