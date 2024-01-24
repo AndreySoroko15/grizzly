@@ -1,5 +1,9 @@
 <?php 
 
+if(isset($_POST['phone_number'])) {
+    checkPhoneNumber($_POST['phone_number']);
+}
+
 function checkPhoneNumber(string $number, $cdn = 'https://cdn.jsdelivr.net/gh/andr-04/inputmask-multi@master/data/phone-codes.json')
 {
     $phones_list_JSON = file_get_contents($cdn);
@@ -19,11 +23,12 @@ function checkPhoneNumber(string $number, $cdn = 'https://cdn.jsdelivr.net/gh/an
         if($cropped_number_under_mask === $country_code &&
             strlen($full_mask_without_symbols) === strlen($clean_number)) {
             
-            return "Данный номер пренадлежит стране: $phone_list_array->name_ru";
-        }
+            echo("Данный номер пренадлежит стране: $phone_list_array->name_ru");
+            return;
+        } 
     }
     
-    return "Совпадений не найдено!";
+    http_response_code(404);
 }    
 
-echo checkPhoneNumber('+1(246)222-2222');
+
