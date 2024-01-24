@@ -7,11 +7,20 @@ function checkPhoneNumber(string $number)
     
     // echo '<pre>' . print_r($phones_list_array, true) . '</pre>';
 
-    $symbols_list = ['+', '-', '(', ')', ' '];
-
+    $symbols_list = ['+', '-', '(', ')', ' ', '#'];
     $clean_number = str_replace($symbols_list, '', $number);
 
-    echo $clean_number;
+    $country_code = str_replace($symbols_list, '', $phones_list_array[40]->mask);
+
+    echo $clean_number . '<br>' . $country_code . '<br>';
+
+    $cropped_number_under_mask = substr($clean_number, 0, strlen($country_code));
+
+    // echo '<p style="color: red">' . $cropped_number_under_mask . '</p>';
+
+    
+
+
 }    
 
 
