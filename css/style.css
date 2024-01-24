@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cookie_block {
+    max-width: 350px;
+    font-size: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.336);
+    border-color: rgb(124, 124, 124);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.cookie_block button {
+    font-size: 12px;
+}
