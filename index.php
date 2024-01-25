@@ -18,6 +18,7 @@
 
     <!-- scripts -->
     <script src="./js/async_check_phone.js"></script>
+    <script src="./js/cookie_block.js"></script>
 </head>
 <body>
     <div class="container">
@@ -33,8 +34,8 @@
         </section>
     </div>
 
-    <div class="cookie_block position-fixed bottom-0 end-0 m-3">
-        <div class="alert alert-light d-flex justify-content-center flex-column" role="alert">
+    <div class="cookie_block position-fixed bottom-0 end-0 m-3 d-none">
+        <div class="alert alert-light d-flex justify-content-center flex-column mb-1" role="alert">
             <p>Этот сайт использует файлы cookie для хранения данных. Продолжая использовать сайт, вы даете свое согласие на работу с этими файлами. </p>
             <button type="button" class="btn btn-success" id="acceptCookie">Хорошо, принимаю</button>
         </div>
