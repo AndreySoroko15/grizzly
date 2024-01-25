@@ -1,7 +1,35 @@
-* {
+*, p, h1, h2 {
     margin: 0;
-    padding: 0;
+    padding: 0 !important;
 }
+
+body {
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 991px) {
+    h1 {
+        font-style: 24px;
+    }
+
+    h2 {
+        font-style: 16px;
+    }
+
+    p {
+        font-style: 12px;
+    }
+}
+
 
 .cookie_block {
     position: relative;;
@@ -21,4 +49,40 @@
     position: absolute;
     top: 5px;
     right: 5px;
+}
+
+/* Стили для задания №3 */
+
+.container {
+    width: 1270px;
+    padding: 0;
+}
+
+.about_company {
+    position: relative;
+    height: 641px;
+    border-radius: 32px;
+    box-shadow: 0px 0px 30px rgba(225, 225, 225, 0.5);
+}
+
+.about_company_content {
+    width: 55%;
+}
+
+.info {
+    width: 255px;
+    padding: 0;
+}
+
+.e_logo_purple {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    right: 2%;
+}
+
+.e_logo_opacity {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
