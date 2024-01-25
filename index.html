@@ -21,7 +21,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="about_company w-auto px-5 pt-5 mt-5">
+        <div class="about_company px-5 pt-5 mt-5">
 
             <img class="e_logo_purple" src="./images/e_logo_purple.png" alt="purple_logo">
             <img class="e_logo_opacity" src="./images/e_logo_opacity.png" alt="opacity_logo">
@@ -61,5 +61,11 @@
             </div>
         </div>
     </div>
+    <script>
+        $(window).on('resize', function() {
+            ($(window).width() <= 991) ?    $('.e_logo_opacity').addClass('d-none') : 
+                                            $('.e_logo_opacity').removeClass('d-none');
+        })
+    </script>
 </body>
 </html>

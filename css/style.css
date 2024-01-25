@@ -18,15 +18,15 @@ h2 {
 
 @media screen and (max-width: 991px) {
     h1 {
-        font-style: 24px;
+        font-size: 24px;
     }
 
     h2 {
-        font-style: 16px;
+        font-size: 16px;
     }
 
     p {
-        font-style: 12px;
+        font-size: 12px;
     }
 }
 
@@ -85,4 +85,71 @@ h2 {
     position: absolute;
     top: 0;
     right: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .about_company_content {
+        width: 65%;
+    }
+
+    .e_logo_purple {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 34%;
+        right: 2%;
+        width: 200px;
+    }
+    
+    .e_logo_opacity {
+        width: 270px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .container {
+        width: 100% !important;
+        margin: auto;
+        padding: 15px !important;
+    }
+    
+    .about_company {
+        position: relative;
+        border-radius: none;
+        box-shadow: none;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .about_company_content {
+        width: 100%;
+        margin: auto !important;
+    }
+
+    .about_company_content > h1 {
+        margin-bottom: 24px !important;
+    }
+
+    .info {
+        width: 45%;
+    }
+
+    .info > h2 {
+        padding: 0 !important;
+    }
+
+    .info > p {
+        padding: 8px 0 24px 0 !important;
+    }
+
+    .e_logo_purple {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 15px;
+        right: 2%;
+        width: 31px;
+    }
+    
+    .e_logo_opacity {
+        width: 270px;
+    }
 }
