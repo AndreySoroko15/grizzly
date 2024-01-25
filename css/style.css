@@ -16,23 +16,12 @@ h2 {
     font-size: 20px;
 }
 
-@media screen and (max-width: 991px) {
-    h1 {
-        font-size: 24px;
-    }
-
-    h2 {
-        font-size: 16px;
-    }
-
-    p {
-        font-size: 12px;
-    }
+section {
+    margin-bottom: 50px;
 }
 
-
 .cookie_block {
-    position: relative;;
+    position: relative;
     max-width: 350px;
     font-size: 12px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.336);
@@ -47,8 +36,8 @@ h2 {
 
 #reject_cookie {
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 0;
+    right: 0;
 }
 
 /* Стили для задания №3 */
@@ -106,6 +95,18 @@ h2 {
 }
 
 @media screen and (max-width: 991px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
     .container {
         width: 100% !important;
         margin: auto;
