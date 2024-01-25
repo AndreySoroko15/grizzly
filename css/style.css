@@ -1,0 +1,156 @@
+*, p, h1, h2 {
+    margin: 0;
+    padding: 0 !important;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+.cookie_block {
+    position: relative;
+    max-width: 350px;
+    font-size: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.336);
+    border-color: rgb(124, 124, 124);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.cookie_block button {
+    font-size: 12px;
+}
+
+#reject_cookie {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* Стили для задания №3 */
+
+.container {
+    width: 1270px;
+    padding: 0;
+}
+
+.about_company {
+    position: relative;
+    height: 641px;
+    border-radius: 32px;
+    box-shadow: 0px 0px 30px rgba(225, 225, 225, 0.5);
+}
+
+.about_company_content {
+    width: 55%;
+}
+
+.info {
+    width: 255px;
+    padding: 0;
+}
+
+.e_logo_purple {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    right: 2%;
+}
+
+.e_logo_opacity {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .about_company_content {
+        width: 65%;
+    }
+
+    .e_logo_purple {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 34%;
+        right: 2%;
+        width: 200px;
+    }
+    
+    .e_logo_opacity {
+        width: 270px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .container {
+        width: 100% !important;
+        margin: auto;
+        padding: 15px !important;
+    }
+    
+    .about_company {
+        position: relative;
+        border-radius: none;
+        box-shadow: none;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .about_company_content {
+        width: 100%;
+        margin: auto !important;
+    }
+
+    .about_company_content > h1 {
+        margin-bottom: 24px !important;
+    }
+
+    .info {
+        width: 45%;
+    }
+
+    .info > h2 {
+        padding: 0 !important;
+    }
+
+    .info > p {
+        padding: 8px 0 24px 0 !important;
+    }
+
+    .e_logo_purple {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 15px;
+        right: 2%;
+        width: 31px;
+    }
+    
+    .e_logo_opacity {
+        width: 270px;
+    }
+}
