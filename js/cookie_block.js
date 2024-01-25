@@ -1,7 +1,7 @@
 $(document).ready(function() {
     let cookie = $(".cookie_block");
-    let close_button = $();
-    let accept_button = $('#acceptCookie');
+    let close_button = $('#reject_cookie');
+    let accept_button = $('#accept_cookie');
     let currentDate = new Date().toLocaleDateString();
 
     let cookieDisplayCheck = localStorage.getItem('show_cookie');
@@ -19,7 +19,10 @@ $(document).ready(function() {
     })
     
 
-    close_button
-    // localStorage.removeItem('show_cookie');
+    close_button.click(function() {
+        cookie.fadeOut()
+    })
 
+    // Раскоммитить для проверки кода (нужно перезагрузить 2 раза страницу)
+    // localStorage.removeItem('show_cookie');
 })

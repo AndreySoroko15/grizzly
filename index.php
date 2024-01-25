@@ -37,7 +37,8 @@
     <div class="cookie_block position-fixed bottom-0 end-0 m-3 d-none">
         <div class="alert alert-light d-flex justify-content-center flex-column mb-1" role="alert">
             <p>Этот сайт использует файлы cookie для хранения данных. Продолжая использовать сайт, вы даете свое согласие на работу с этими файлами. </p>
-            <button type="button" class="btn btn-success" id="acceptCookie">Хорошо, принимаю</button>
+            <button type="button" class="btn btn-success" id="accept_cookie">Хорошо, принимаю</button>
+            <button type="button" class="btn-close" aria-label="Close" id="reject_cookie"></button>
         </div>
     </div>
 </body>
