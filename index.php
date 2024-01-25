@@ -32,6 +32,11 @@
             </form>
             <p class="check_number_status text-center"></p>
         </section>
+        <section>
+            <h1 class="fs-5 mt-3 mb-2 text-center">Задание №2. Куки поп-ап</h1>
+            <p class="text-center">Реализован всплывающий блок об использовании куки. Для проверки в js/cookie_block.js нужно раскоммитить строку и обновить страницу 2 раза, тогда блок снова появится, затем закоммитить, чтобы вернуть функционал. </p>
+
+        </section>
     </div>
 
     <div class="cookie_block position-fixed bottom-0 end-0 m-3 d-none">
